@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+}
+p {
+  font-size: 20px;
+  margin: 0;
+  transition: 0.4s;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 10px;
+  border: 0 solid #fefefe;
+}
+p:hover {
+  border: 1px solid #f0f0f0;
+}
+button {
+  outline: none;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 5px 10px;
+}
+button:hover {
+  background: inherit;
+}
+input {
+  font-size: inherit;
+  width: inherit;
+  height: inherit;
+  outline: none;
+  border: 0;
+}
+.stickerBox {
+  border-radius: 5px;
+  box-shadow: #ddd 5px 5px 15px;
+  position: absolute;
+  width: 350px;
+  overflow: hidden;
+  padding: 0 0 45px 0;
+  cursor: pointer;
+}
+.todo {
+  background-color: white;
+  font-size: 18px;
+  gap: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.todo p {
+  border-radius: 5px;
+}
+.todo p:hover {
+  background: #f0f0f0;
+  outline: none;
+}
+.placeholder {
+  background-color: #888;
+  opacity: 0.5;
+}

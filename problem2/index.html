@@ -1,0 +1,56 @@
+<!-- 이 파일을 수정해선 안됩니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/client/asset/index.css" />
+    <title>SomeTimes</title>
+  </head>
+  <body>
+    <h1>🏫 SomeTimes에 어서오세요!</h1>
+
+    <h3>📢 등록된 게시글입니다!</h3>
+    <form id="postForm">
+      <input placeholder="글을 써보세요" id="savePostInput" />
+      <select name="users" id="savePostSelect">
+        <option value="김멋사">김멋사</option>
+        <option value="임대표">임대표</option>
+        <option value="유살구">유살구</option>
+        <option value="배교수">배교수</option>
+        <option value="김발랄">김발랄</option>
+        <option value="이디짱">이디짱</option>
+        <option value="윤람쥐">윤람쥐</option>
+        <option value="최깡패">최깡패</option>
+        <option value="조명량">조명량</option>
+        <option value="김광인">김광인</option>
+      </select>
+      <button type="submit" id="savePostBtn">등록</button>
+    </form>
+
+    <ul id="posts"></ul>
+
+    <!-- 특정 회원 정보를 알아내는 기능 -->
+    <h3>🦁 선택한 회원 정보를 보여줍니다!</h3>
+    <select name="users" id="userSelectButton">
+      <option value="김멋사">김멋사</option>
+      <option value="임대표">임대표</option>
+      <option value="유살구">유살구</option>
+      <option value="배교수">배교수</option>
+      <option value="김발랄">김발랄</option>
+      <option value="이디짱">이디짱</option>
+      <option value="윤람쥐">윤람쥐</option>
+      <option value="최깡패">최깡패</option>
+      <option value="조명량">조명량</option>
+      <option value="김광인">김광인</option>
+    </select>
+    <div id="card">
+      <h3 id="userNameText">김멋사</h3>
+      <p id="userInfoHashTag">#아기사자 #배우고자하는열정</p>
+    </div>
+
+    <!-- type에 module이 들어가있습니다. 이게 무슨 의미일까요?? -->
+    <script type="module" src="./src/client/index.js"></script>
+  </body>
+</html>
