@@ -67,6 +67,21 @@ const deleteTodo = (id) => {
   // 여기에 삭제 로직을 작성하세요
 };
 
+/*
+    예상출력:
+    command error!
+    id = 10에 맞는 todo를 찾을 수 없습니다.
+    id = 100에 맞는 todo를 찾을 수 없습니다.
+    id: 0, title: title0, text: text0
+    id: 3, title: 타이틀3, text: 텍스트3
+    id: 4, title: 타이틀4, text: 텍스트4
+    id: 5, title: title5, text: text5
+    id: 6, title: title6, text: text6
+    id: 7, title: title7, text: text7
+    id: 8, title: title8, text: text8
+    id: 9, title: title9, text: text9
+    통과!!
+*/
 /** @info 테스트케이스, 이하 코드는 조작하지 마세요. '통과!!' 가 출력되어야합니다 */
 const test = () => {
   todoControl('bug!!!');
