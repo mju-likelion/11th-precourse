@@ -48,6 +48,7 @@ const createTodo = (newTodo) => {
 // 보너스: 리터럴 문자를 활용해 출력하세요.
 const readTodo = () => {
   // todos를 하나씩 출력 형식에 맞춰 출력
+  // ㅇㅇㅇ
 };
 
 // 에러처리: 만약 업데이트하려는 todo를 찾을 수 없는 경우 'id = (n)에 맞는 todo를 찾을 수 없습니다.' 를 출력하세요.
@@ -58,6 +59,7 @@ const updateTodo = (targetTodo) => {
   //   return 에러 메시지를 출력하세요
   // }
   // 여기에 업데이트 로직을 작성하세요
+  // ㅇㅇㅇ
 };
 
 // 에러처리: 만약 업데이트하려는 todo를 찾을 수 없는 경우 'id = n에 맞는 todo를 찾을 수 없습니다.' 를 출력하세요.
@@ -68,6 +70,7 @@ const deleteTodo = (id) => {
   //   return console.log(여기에 에러 메시지를 쓰세요);
   // }
   // 여기에 삭제 로직을 작성하세요
+  //ㅇㅇㅇ
 };
 
 /*
