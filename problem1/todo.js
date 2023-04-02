@@ -33,7 +33,9 @@ let id = 0;
  * @param {'create' | 'read' | 'update' | 'delete'} command
  * @param {{ id: number, title: string, text: string } | null} value
  * */
-const todoControl = (command, value) => {};
+const todoControl = (command, value) => {
+  // 대충 뭘 작성함
+};
 
 // 보너스: newTodo를 비구조화 할당하여 todos에 추가하세요.
 /** @param {{ id: number, title: string, text: string }} newTodo */
