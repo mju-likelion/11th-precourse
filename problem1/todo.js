@@ -41,6 +41,7 @@ const todoControl = (command, value) => {
 /** @param {{ id: number, title: string, text: string }} newTodo */
 const createTodo = (newTodo) => {
   // todos에 새로운 todo를 삽입
+  // ㅇㅇㅇ
 };
 
 // 출력 형식: 'id: 0, ttile: 타이틀, text: 텍스트'
