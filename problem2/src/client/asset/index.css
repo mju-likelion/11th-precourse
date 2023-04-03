@@ -1,14 +1,33 @@
 #posts {
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  border: 1px solid #b4b4b4;
+  border-radius: 16px;
+  padding-left: 0;
 }
 
 #posts > li:nth-child(odd) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #posts > li {
+  width: 100%;
+  padding-left: 30px;
 }
 
 #card {
+  margin-top: 20px;
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #card p {
+  color: #2a55ff;
+  font-weight: bold;
 }
