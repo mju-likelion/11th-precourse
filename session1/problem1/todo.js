@@ -31,7 +31,7 @@ let id = 0;
 /**
  * 커멘트를 입력받아 처리한다.
  * @param {'create' | 'read' | 'update' | 'delete'} command
- * @param {{ id: number, title: string, text: string } | null} value
+ * @param {{ id: number, title: string, text: string } | null | number} value
  * */
 const todoControl = (command, value) => {
   // 대충 뭘 작성함
@@ -44,7 +44,7 @@ const createTodo = (newTodo) => {
   // ㅇㅇㅇ
 };
 
-// 출력 형식: 'id: 0, ttile: 타이틀, text: 텍스트'
+// 출력 형식: 'id: 0, title: 타이틀, text: 텍스트'
 // 보너스: 리터럴 문자를 활용해 출력하세요.
 const readTodo = () => {
   // todos를 하나씩 출력 형식에 맞춰 출력
