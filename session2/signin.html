@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/sign.css" />
     <title>로그인</title>
   </head>
   <body>
-    <h1>로그인</h1>
-
-    <form id="loginForm">
-      <input type="text" placeholder="아이디" id="idInput" />
-      <input type="password" placeholder="비밀번호" id="passwordInput" />
-      <button type="submit" id="loginButton">로그인</button>
-    </form>
-    <a href="signup.html">아직 회원이 아니신가요?</a>
+    <div class="signWrapper">
+      <h1>띵메이트</h1>
+      <form id="loginForm" class="signForm">
+        <input
+          type="text"
+          placeholder="아이디"
+          id="idInput"
+          class="signInput"
+        />
+        <input
+          type="password"
+          placeholder="비밀번호"
+          id="passwordInput"
+          class="signInput"
+        />
+        <button type="submit" id="loginButton" class="signButton">
+          로그인
+        </button>
+      </form>
+      <a href="signup.html">아직 회원이 아니신가요?</a>
+    </div>
 
     <script type="module" src="./js/signin.js"></script>
   </body>

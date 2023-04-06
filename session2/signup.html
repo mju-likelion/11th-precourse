@@ -4,16 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/sign.css" />
     <title>회원가입</title>
   </head>
   <body>
-    <h1>회원가입</h1>
-
-    <form id="signupForm">
-      <input type="text" placeholder="아이디" id="signupId" />
-      <input type="password" placeholder="비밀번호" id="signupPassword" />
-      <button type="submit" id="signupButton">로그인</button>
-    </form>
+    <div class="signWrapper">
+      <h1>회원가입</h1>
+      <form id="signupForm" class="signForm">
+        <input
+          type="text"
+          placeholder="아이디"
+          id="signupId"
+          class="signInput"
+        />
+        <input
+          type="password"
+          placeholder="비밀번호"
+          id="signupPassword"
+          class="signInput"
+        />
+        <button type="submit" id="signupButton" class="signButton">
+          로그인
+        </button>
+      </form>
+      <a href="signin.html">로그인 화면으로</a>
+    </div>
 
     <script type="module" src="./js/signup.js"></script>
   </body>
