@@ -36,6 +36,8 @@ const readTodo = () => {
     const userEl = document.createElement('p');
     const deleteEl = document.createElement('button');
 
+    divEl.className = 'todoItem';
+
     completeEl.type = 'checkbox';
     completeEl.addEventListener('click', () =>
       updateComplete(todo.id, completeEl.checked)
