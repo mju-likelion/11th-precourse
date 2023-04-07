@@ -10,6 +10,9 @@ const checkLogin = (id, password) => {
   // localStorage는 반드시 string으로 저장해야합니다.
   // 따라서 localStorage에 있는 값을 받아오면 string형식으로 받아오게되므로 이를 JSON 형태로 바꿔주어야합니다.
   const userList = localStorage.getItem('userList');
+
+  if (!userList) return false;
+
   const convertToJson = JSON.parse(userList);
 
   // includes로 하면 정보가 일치하는 유저를 찾을 수 없습니다. 왜일까요?
