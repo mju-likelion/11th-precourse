@@ -25,36 +25,40 @@ const isLogin = () => {
 const readTodo = () => {
   todoContainerEl.innerHTML = '';
 
-  const todos = JSON.parse(localStorage.getItem('todos'));
+  // 가장 최근 todo를 처음에 보여주기 위해 배열을 불러오면서 뒤집어줍니다
+  const todos = JSON.parse(localStorage.getItem('todos')).reverse();
 
   // todo를 보여줄 DOM을 그립니다.
   todos.forEach((todo) => {
     const divEl = document.createElement('div');
-    const idEl = document.createElement('p');
+    // const idEl = document.createElement('p');
     const completeEl = document.createElement('input');
-    const contentEl = document.createElement('p');
+    const contentEl = document.createElement('label');
     const userEl = document.createElement('p');
     const deleteEl = document.createElement('button');
 
     divEl.className = 'todoItem';
 
     completeEl.type = 'checkbox';
+    completeEl.className = 'checkbox';
+    completeEl.id = todo.id;
     completeEl.addEventListener('click', () =>
       updateComplete(todo.id, completeEl.checked)
     );
 
-    if (todo.complete) contentEl.style.textDecoration = 'line-through';
-
     deleteEl.type = 'button';
-    deleteEl.textContent = '삭제';
+    deleteEl.textContent = 'X';
+    deleteEl.className = 'deleteButton';
     deleteEl.addEventListener('click', () => deleteTodo(todo.id));
 
-    idEl.textContent = todo.id;
     completeEl.checked = todo.complete;
+
     contentEl.textContent = todo.content;
+    contentEl.htmlFor = todo.id;
+
     userEl.textContent = todo.user;
 
-    divEl.append(idEl, completeEl, contentEl, userEl, deleteEl);
+    divEl.append(/*idEl*/ completeEl, contentEl, userEl, deleteEl);
     todoContainerEl.append(divEl);
   });
 };
@@ -72,6 +76,7 @@ const createTodo = () => {
     user: JSON.parse(localStorage.getItem('login')),
   };
 
+  // push는 뒤에 추가, unshift는 앞에서 추가 그럼 뒤에서 제거, 추가는??
   todos.push(newTodo);
 
   localStorage.setItem('todos', JSON.stringify(todos));
