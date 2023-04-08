@@ -2,16 +2,15 @@ const formEl = document.querySelector('#signupForm');
 const idEl = document.querySelector('#signupId');
 const passwordEl = document.querySelector('#signupPassword');
 
+
 const isUserExist = (newUserId) => {
     const users = localStorage.getItem('userList');
 
     if (!users) return false;
 
     const convertedUsers = JSON.parse(users); //users에서 받아온 객체를 JSON 형태로 뱉어줘
-    const getExistUsers = convertedUsers.find((users) => user,id === newUserId);
+    const getExistUsers = convertedUsers.find((user) => user.id === newUserId);
     
-
-
     return getExistUsers ? true : false
 };
 
