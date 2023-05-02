@@ -69,3 +69,11 @@
 - 숫자인지 아닌지 확인하는 방법
 - 문자열 자르는 방법 (보너스 문제)
 - DOM 선택 방법 (보너스 문제)
+
+## 결과 예시
+![1](https://user-images.githubusercontent.com/63037629/235724618-92ebe74a-7f3e-4425-951a-df386f6741f8.PNG)
+![2](https://user-images.githubusercontent.com/63037629/235724621-495376c4-527d-4fdd-9744-5f77f180cc5a.PNG)
+![3](https://user-images.githubusercontent.com/63037629/235724624-73693e51-fcee-480c-9b13-f57b3d65fe96.PNG)
+![4](https://user-images.githubusercontent.com/63037629/235724625-04d078a0-5e55-4802-8b31-56c08bb9fe28.PNG)
+
+
