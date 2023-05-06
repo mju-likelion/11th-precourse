@@ -27,4 +27,4 @@
 // person의 key, value를 참고하여
 // personArray 변수에 ['fist=kim', 'lastname=gildong', 'age=20', 'from=korea', 'job=programmer', 'score=50']과 같은 배열로 만드세요.
 // 단, personArray.push(`first=${person.first}`) personArray.push(`first=${person.first}`)와 같은 하드코딩은 하지 마세요.
-// 한트: '마지막 문제 연관' 이라고 쓰여진 문제와 Array 다루는 법을 조합하세요.
+// 힌트: '마지막 문제 연관' 이라고 쓰여진 문제와 Array 다루는 법을 조합하세요.
