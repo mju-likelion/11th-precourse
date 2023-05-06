@@ -4,7 +4,7 @@
 
 ## 폴더 설명
 
-- problem: 문제를 모아놓은 폴더입니다.
+- problem: 문제를 모아놓은 폴더입니다. Array-Object-Combination 순서대로 학습하세요!
   - Array: 배열 관련 문제를 모아놓았습니다.
   - Object: 객체 관련 문제를 모아놓았습니다.
   - Combination: 배열과 객체를 혼합한 문제를 모아놓았습니다.
